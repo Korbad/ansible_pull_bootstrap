@@ -1,0 +1,7 @@
+- hosts: localhost
+  connection: local
+
+  tasks:
+  - ansible.builtin.user:
+      generate_ssh_key: yes
+      name: ansible
